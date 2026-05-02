@@ -6,3 +6,5 @@ The project is divided into four interconnected modules, each targeting specific
 
 
 Module 3 — Enrollment & Academic Management
+
+<img width="848" height="1010" alt="Smart University System drawio" src="https://github.com/user-attachments/assets/d894c01d-3751-4160-b8e0-3e79338f2d37" />
