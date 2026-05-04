@@ -1,28 +1,23 @@
+package finance;
+
+import users.Student;
+
 public class Scholarship {
     private Student student;
-    private Result result;
-    private double discountPercentage;
+    private double discount;
 
-    public Scholarship(Student student, Result result) {
-        this.student = student;
-        this.result = result;
+    public Scholarship(Student s) {
+        this.student = s;
     }
 
-    public void applyScholarship() {
-        if (result.getGpa() >= 3.5) {
-            this.discountPercentage = 20.0;
-        } else {
-            this.discountPercentage = 0.0;
-        }
+    public void apply() {
+        if (student.getGpa() >= 3.5)
+            discount = 20;
+        else
+            discount = 0;
     }
 
-    public void displayScholarshipDetails() {
-        System.out.println("Scholarship Status for " + student.getName());
-        if (discountPercentage > 0) {
-            System.out.println("Status: Approved (" + discountPercentage + "% Discount)");
-        } else {
-            System.out.println("Status: Not Eligible (GPA below 3.5)");
-        }
+    public void showScholarship() {
+        System.out.println("Scholarship: " + discount + "%");
     }
 }
-
