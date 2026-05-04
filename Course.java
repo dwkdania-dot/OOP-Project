@@ -1,7 +1,19 @@
-public class Course {
-    private String courseName = "Placeholder Course";
-    private String courseCode = "CS-000";
+package university;
 
-    public String getCourseName() { return courseName; }
-    public String getCourseCode() { return courseCode; }
+public class Course {
+    private String courseCode;
+    private int creditHours;
+
+    public Course(String courseCode, int creditHours) {
+        this.courseCode = courseCode;
+        this.creditHours = creditHours;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void displayCourse() {
+        System.out.println("Course: " + courseCode + " | Credit Hours: " + creditHours);
+    }
 }
